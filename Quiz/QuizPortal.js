@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import classes from './QuizPortal.module.css'
+import Modal from '../UI/Modal'
 
 const questionsArray = [
   {
@@ -129,7 +130,14 @@ const QuizPortal = (prop) =>
       setQuestionState( questionState + 1 )
     
     }
-   if (questionState === questionsArray.length) return <div>Loading...</div>
+  const getTotal = ( total, current ) => { return total + current }
+  
+  if ( questionState === questionsArray.length ) return <Modal>
+      <h2>You scored </h2>
+    <p>{scoreArray.reduce(getTotal, 0)}</p>
+    <h2>Out Of  { questionsArray.length} Questions</h2> 
+  </Modal>
+
     return (
       
      
