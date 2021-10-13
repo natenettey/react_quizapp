@@ -1,0 +1,28 @@
+.home-section{
+ display: flex;
+align-items: center;
+justify-content: center; 
+margin-top:10rem;
+
+
+}
+
+.home-section__one{
+    background-color: #30465b;
+    width:350px;
+    padding:2rem;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.home-section__text{
+text-align: center;
+
+}
+.home-section__text h1, h3{
+    display: block;
+    color:white;
+}
+.home-section__text h1{
+    margin-bottom: 15px;
+}
